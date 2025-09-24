@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-800: oklch(44.8% 0.119 151.328);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
@@ -180,6 +181,9 @@
   .mb-\[33px\] {
     margin-bottom: 33px;
   }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
+  }
   .flex {
     display: flex;
   }
@@ -242,6 +246,9 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -255,6 +262,11 @@
   .sm\:mt-\[50px\] {
     @media (width >= 500px) {
       margin-top: 50px;
+    }
+  }
+  .sm\:mt-\[150px\] {
+    @media (width >= 500px) {
+      margin-top: 150px;
     }
   }
   .sm\:flex {
@@ -312,6 +324,11 @@
       font-size: 40px;
     }
   }
+  .sm\:text-\[50px\] {
+    @media (width >= 500px) {
+      font-size: 50px;
+    }
+  }
   .lg\:mt-\[20px\] {
     @media (width >= 700px) {
       margin-top: 20px;
@@ -362,6 +379,11 @@
       width: 100%;
     }
   }
+  .lg\:flex-col {
+    @media (width >= 700px) {
+      flex-direction: column;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 700px) {
       flex-direction: row;
@@ -387,6 +409,11 @@
       justify-content: space-evenly;
     }
   }
+  .lg\:justify-start {
+    @media (width >= 700px) {
+      justify-content: flex-start;
+    }
+  }
   .lg\:gap-\[0px\] {
     @media (width >= 700px) {
       gap: 0px;
@@ -397,9 +424,24 @@
       gap: 40px;
     }
   }
+  .lg\:gap-\[50px\] {
+    @media (width >= 700px) {
+      gap: 50px;
+    }
+  }
   .lg\:gap-\[70px\] {
     @media (width >= 700px) {
       gap: 70px;
+    }
+  }
+  .lg\:gap-\[250px\] {
+    @media (width >= 700px) {
+      gap: 250px;
+    }
+  }
+  .lg\:pl-\[10\%\] {
+    @media (width >= 700px) {
+      padding-left: 10%;
     }
   }
   .lg\:text-start {
@@ -415,6 +457,11 @@
   .lg\:text-\[50px\] {
     @media (width >= 700px) {
       font-size: 50px;
+    }
+  }
+  .lg\:text-\[60px\] {
+    @media (width >= 700px) {
+      font-size: 60px;
     }
   }
 }
